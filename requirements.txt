@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+requests
+numpy
+torch
+transformers
+TTS
+sounddevice
+soundfile
+huggingface_hub
