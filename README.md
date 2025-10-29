@@ -40,6 +40,6 @@ It consists of two components:
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/vikasosca/talk_to_me.git
-cd talk_to_me
+git clone https://github.com/vikasosca/talk_to_AI.git
+cd talk_to_AI
 
