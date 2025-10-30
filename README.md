@@ -19,14 +19,15 @@ It consists of two components:
    - Transcribes audio using Whisper (`openai/whisper-large-v3`) via Hugging Face API.
    - Generates an AI reply using a local model (`google/flan-t5-small`).
    - Synthesizes speech from the reply using Coqui TTS (`tts_models/en/ljspeech/tacotron2-DDC`).
-4. The cli*two-way voice conversationent then plays back the AI’s voice response.
+4. The client receives text of conversation and then plays back the AI’s voice response.
 
 ## Key observations
 
 1. The client currently runs on the laptop as remote server doesnot come with speaker or a mic
-2, Hugging face models are downloaded and run locally to avoid token limit and endpoints becoming unreachable
----
-
+2. Hugging face models are downloaded and run locally to avoid token limit and endpoints becoming unreachable
+3. The model has latency as it is runing on a very small server. A large CPU would speed up the response.
+   ---
+   
 ## 🧩 Tech Stack
 - **FastAPI** — API framework for handling voice requests.
 - **Transformers** — For local text generation model.
@@ -37,7 +38,6 @@ It consists of two components:
 ---
 
 ## ⚙️ Setup Instructions
-
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/vikasosca/talk_to_AI.git
